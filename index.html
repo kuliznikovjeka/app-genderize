@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Genderize</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+	<section class="genderize">
+		<div class="genderize__container">
+			<h1 class="genderize__title">Приложение <span>genderize</span></h1>
+			<p class="genderize__desc">Программа работает правильно только с Английскими именами. Если введёте русское имя,
+				она может cработать не правильно.<br> <span>Для правильной работы вводите имена на латинице !</span></p>
+			<form class="genderize__form">
+				<input placeholder="Введите имя на английском языке" class="genderize__input"></input>
+				<button type="submit" class="genderize__button">Узнать пол</button>
+			</form>
+			<p class="genderize__person-gender"></p>
+		</div>
+	</section>
+
+	<script type="module" src="./js/ui-elements.js"></script>
+	<script type="module" src="./js/genderize.js"></script>
+</body>
+
+</html>

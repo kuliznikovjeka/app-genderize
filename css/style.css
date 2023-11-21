@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	background-color: #293341;
+	color: #fff;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.genderize {
+	padding: 30px 0px;
+}
+
+.genderize__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.genderize__title {
+	text-align: center;
+}
+.genderize__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.genderize__title span {
+	color: orange;
+	text-decoration: underline;
+}
+
+.genderize__desc {
+	text-align: center;
+	font-size: 12px;
+}
+.genderize__desc span {
+	font-weight: 700;
+	font-size: 14px;
+}
+.genderize__desc:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.genderize__form {
+	max-width: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.genderize__form:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.genderize__input::placeholder {
+	font-size: 14px;
+}
+.genderize__input {
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid orange;
+}
+
+.genderize__button {
+	cursor: pointer;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: orange;
+	font-weight: 700;
+	transition:
+		background-color 0.3s ease 0s,
+		color 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+	.genderize__button:hover {
+		background-color: rgb(167, 108, 0);
+		color: #fff;
+	}
+}
+
+.genderize__person-gender {
+	text-align: center;
+	font-size: 14px;
+}
+.genderize__person-gender:not(:last-child) {
+	margin-bottom: 10px;
+}
